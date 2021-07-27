@@ -4,7 +4,7 @@ tus mejores canciones
 
 git remote -v
 
-//git remote rename actualname nuevoname
+//git remote rename actual_name nuevo_name
 git remote rename origin fork
 
 // Agregamos el remoto del propietario del proyecto
@@ -18,3 +18,9 @@ git checkout -b bugfix
 //Agragamos los cambios y acemos commit
 git add .
 git commit -m "fix code to solve problem"
+
+::: Solicitar incluir el cambio en el repositorio Original :::
+git remote -v
+
+//git push RemotoAlQueVamosEnviarCambios RamaDelRemotoQueRecibe
+git push fork bugfix
